@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="We propose a new analysis for the celebrated forward algorithm in the setting of stochastic online linear regression, and show the benefits of it replacing ridge regression whenever possible." />
+  <meta name="description" content="We generalize the thresholding bandit setting and devise a generic algorithm as well as a proof methodology that also applies to existing algorithms in literature." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://redaouhamma.github.io/publication/forward/" />
+  <link rel="alternate" hreflang="en-us" href="https://redaouhamma.github.io/publication/thresholding/" />
 
   
 
@@ -288,7 +288,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://redaouhamma.github.io/publication/forward/" />
+  <link rel="canonical" href="https://redaouhamma.github.io/publication/thresholding/" />
 
   
   
@@ -305,9 +305,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Reda Ouhamma" />
-  <meta property="og:url" content="https://redaouhamma.github.io/publication/forward/" />
-  <meta property="og:title" content="Stochastic Online Linear Regression: the Forward Algorithm to Replace Ridge | Reda Ouhamma" />
-  <meta property="og:description" content="We propose a new analysis for the celebrated forward algorithm in the setting of stochastic online linear regression, and show the benefits of it replacing ridge regression whenever possible." /><meta property="og:image" content="https://redaouhamma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://redaouhamma.github.io/publication/thresholding/" />
+  <meta property="og:title" content="Online Sign Identification: Minimization of the Number of Errors in Thresholding Bandits | Reda Ouhamma" />
+  <meta property="og:description" content="We generalize the thresholding bandit setting and devise a generic algorithm as well as a proof methodology that also applies to existing algorithms in literature." /><meta property="og:image" content="https://redaouhamma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://redaouhamma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -338,9 +338,9 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://redaouhamma.github.io/publication/forward/"
+    "@id": "https://redaouhamma.github.io/publication/thresholding/"
   },
-  "headline": "Stochastic Online Linear Regression: the Forward Algorithm to Replace Ridge",
+  "headline": "Online Sign Identification: Minimization of the Number of Errors in Thresholding Bandits",
   
   "datePublished": "2021-06-06T00:00:00Z",
   "dateModified": "2021-05-28T00:00:00Z",
@@ -358,7 +358,7 @@
       "url": "https://redaouhamma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "We propose a new analysis for the celebrated forward algorithm in the setting of stochastic online linear regression, and show the benefits of it replacing ridge regression whenever possible."
+  "description": "We generalize the thresholding bandit setting and devise a generic algorithm as well as a proof methodology that also applies to existing algorithms in literature."
 }
 </script>
 
@@ -374,11 +374,11 @@
 
 
 
-  <title>Stochastic Online Linear Regression: the Forward Algorithm to Replace Ridge | Reda Ouhamma</title>
+  <title>Online Sign Identification: Minimization of the Number of Errors in Thresholding Bandits | Reda Ouhamma</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="308963ba22a8efa48b971b9f2140960d" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="36d0ef9987805cefb1c496d5cc94bed2" >
 
   
   
@@ -707,7 +707,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Stochastic Online Linear Regression: the Forward Algorithm to Replace Ridge</h1>
+  <h1>Online Sign Identification: Minimization of the Number of Errors in Thresholding Bandits</h1>
 
   
 
@@ -726,8 +726,9 @@
 
   <span >
       Reda Ouhamma</span>, <span >
-      Odalric-Ambrym Maillard</span>, <span >
-      Vianney Perchet</span>
+      Rémy Degenne</span>, <span >
+      Vianney Perchet</span>, <span >
+      Pierre Gaillard</span>
   </div>
   
   
@@ -778,14 +779,10 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="/publication/forward/Forward.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/forward/cite.bib">
+        data-filename="/publication/thresholding/cite.bib">
   Cite
 </a>
 
@@ -815,7 +812,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">We consider the problem of online linear regression in the stochastic setting. We derive high probability regret bounds for online  regression and the  algorithm. This enables us to compare online regression algorithms more accurately and eliminate assumptions of bounded observations and predictions. Our study advocates for the use of the forward algorithm in lieu of ridge due to its enhanced bounds and robustness to the regularization parameter. Moreover, we explain how to integrate it in algorithms involving linear function approximation to remove a boundedness assumption without deteriorating theoretical bounds. We showcase this modification in linear bandit settings where it yields improved regret bounds. Last, we provide numerical experiments to illustrate our results and endorse our intuitions.</p>
+    <p class="pub-abstract">In the fixed budget thresholding bandit problem, an algorithm sequentially allocates a budgeted number of samples to different distributions. It then predicts whether the mean of each distribution is larger or lower than a given threshold. We introduce a large family of algorithms (containing most existing relevant ones), inspired by the Frank-Wolfe algorithm, and provide a thorough yet generic analysis of their performance. This allowed us to construct new explicit algorithms, for a broad class of problems, whose losses are within a small constant factor of the non-adaptive oracle ones. Quite interestingly, we observed that adaptive methods empirically greatly out-perform non-adaptive oracles, an uncommon behavior in standard online learning settings, such as regret minimization. We explain this surprising phenomenon on an insightful toy problem.</p>
     
 
     
@@ -875,7 +872,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://redaouhamma.github.io/publication/forward/&amp;text=Stochastic%20Online%20Linear%20Regression:%20the%20Forward%20Algorithm%20to%20Replace%20Ridge" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://redaouhamma.github.io/publication/thresholding/&amp;text=Online%20Sign%20Identification:%20Minimization%20of%20the%20Number%20of%20Errors%20in%20Thresholding%20Bandits" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -888,7 +885,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://redaouhamma.github.io/publication/forward/&amp;t=Stochastic%20Online%20Linear%20Regression:%20the%20Forward%20Algorithm%20to%20Replace%20Ridge" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://redaouhamma.github.io/publication/thresholding/&amp;t=Online%20Sign%20Identification:%20Minimization%20of%20the%20Number%20of%20Errors%20in%20Thresholding%20Bandits" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -901,7 +898,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Stochastic%20Online%20Linear%20Regression:%20the%20Forward%20Algorithm%20to%20Replace%20Ridge&amp;body=https://redaouhamma.github.io/publication/forward/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Online%20Sign%20Identification:%20Minimization%20of%20the%20Number%20of%20Errors%20in%20Thresholding%20Bandits&amp;body=https://redaouhamma.github.io/publication/thresholding/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -914,7 +911,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://redaouhamma.github.io/publication/forward/&amp;title=Stochastic%20Online%20Linear%20Regression:%20the%20Forward%20Algorithm%20to%20Replace%20Ridge" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://redaouhamma.github.io/publication/thresholding/&amp;title=Online%20Sign%20Identification:%20Minimization%20of%20the%20Number%20of%20Errors%20in%20Thresholding%20Bandits" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -927,7 +924,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Stochastic%20Online%20Linear%20Regression:%20the%20Forward%20Algorithm%20to%20Replace%20Ridge%20https://redaouhamma.github.io/publication/forward/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Online%20Sign%20Identification:%20Minimization%20of%20the%20Number%20of%20Errors%20in%20Thresholding%20Bandits%20https://redaouhamma.github.io/publication/thresholding/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -940,7 +937,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://redaouhamma.github.io/publication/forward/&amp;title=Stochastic%20Online%20Linear%20Regression:%20the%20Forward%20Algorithm%20to%20Replace%20Ridge" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://redaouhamma.github.io/publication/thresholding/&amp;title=Online%20Sign%20Identification:%20Minimization%20of%20the%20Number%20of%20Errors%20in%20Thresholding%20Bandits" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1087,6 +1084,12 @@
 
     </div>
   </div>
+
+
+  
+    
+
+
 
 
   
